@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Matoli • Tradition × Tech</title>
+  <meta name="description" content="Interactive Smart Matoli website: why we hang fruits, sacred meanings, real photos, Ganesh history timeline, and a video." />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter','system-ui','ui-sans-serif','Segoe UI','Roboto'],
+            display: ['Playfair Display','serif']
+          },
+          colors: {
+            saffron: {
+              50:'#fff7e6',100:'#ffeab8',200:'#ffd780',300:'#ffc04d',400:'#ffa726',500:'#ff9500',600:'#db7f00',700:'#b36800',800:'#8f5300',900:'#733f00'
+            },
+            turmeric: {
+              50:'#fffbe6',100:'#fff3b0',200:'#ffe66d',300:'#ffd426',400:'#ffc107',500:'#ffb300',600:'#d99400',700:'#b37700',800:'#8c5c00',900:'#714900'
+            }
+          },
+          boxShadow: {
+            soft:'0 10px 30px rgba(0,0,0,.15)',
+            glow:'0 0 0 6px rgba(255,193,7,.25)'
+          },
+          keyframes: {
+            float:{'0%,100%':{transform:'translateY(0)'},'50%':{transform:'translateY(-10px)'}}
+          },
+          animation: {
+            float:'float 6s ease-in-out infinite'
+          }
+        }
+      }
+    }
+  </script>
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" crossorigin="anonymous"></script>
+  <!-- Lenis smooth scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.44/bundled/lenis.min.js"></script>
+  <!-- GLightbox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <style>
+    :root{ --bg1:#ffec99; --bg2:#ffb84d; }
+    body{ background: radial-gradient(1000px 600px at 20% -10%, var(--bg1), transparent), linear-gradient(135deg, #ffe082, #ffcc4d, #ffad33); }
+    .glass{ background: rgba(255,255,255,.35); backdrop-filter: blur(12px); }
+    .scrollbar{ position:fixed; top:0; left:0; height:4px; width:0; background:linear-gradient(90deg,#ffd426,#ff9500); z-index:9999; box-shadow:0 2px 8px rgba(0,0,0,.2); }
+    .cursor-blob{ position:fixed; width:220px; height:220px; border-radius:50%; pointer-events:none; mix-blend-mode:multiply; filter:blur(40px); background: radial-gradient(circle at 30% 30%, rgba(255,212,38,.6), rgba(255,149,0,.45)); transform:translate(-50%,-50%); opacity:.6; z-index:0;}
+  </style>
+</head>
+<body class="font-sans text-neutral-800 selection:bg-yellow-200 selection:text-neutral-900">
+
+  <!-- Example of one fixed image -->
+  <img src="https://raw.githubusercontent.com/Primz-23/Smart-Matoli/main/attached_assets/Betel_leafs_Selling_1755663135736.jfif" alt="Betel Leaves" class="w-64 rounded shadow"/>
+
+  <!-- Repeat same pattern for all images -->
+
+</body>
+</html>
